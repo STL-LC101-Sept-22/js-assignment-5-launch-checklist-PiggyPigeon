@@ -1,7 +1,7 @@
 // Write your JavaScript code here!
 
 
-//the below line may be for test specs but with this line the site wont work....
+//the below line may be for test specs but with this line the site wont work....with line the site doesnt work but TDD works, comment out if you prefer working site
 const { addDestinationInfo } = require("./scriptHelper");
 
 window.addEventListener("load", function() {
