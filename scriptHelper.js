@@ -22,17 +22,17 @@ function validateInput(testInput) {
    let numberInput = Number(testInput);
    if (testInput === "")
    {
-    list.style.visibility = "hidden"
+
        return "Empty";
    }
    else if (isNaN(numberInput))
    {
-    list.style.visibility = "hidden"
+   
        return "Not a Number";
    }
    else if (isNaN(numberInput) === false)
    {
-    list.style.visibility = "hidden"
+ 
        return "Is a Number";
    }
 }
@@ -48,6 +48,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
    } else if (validateInput(pilot) === "Is a Number" || validateInput(copilot) === "Is a Number" || validateInput(fuelLevel) === "Not a Number" || validateInput(cargoLevel) === "Not a Number" ) {
        alert("You gotta enter valid input!");
    } else {
+    list.style.visibility = "hidden"
        pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;
        copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;
        let launchStatus = document.getElementById("launchStatus");
