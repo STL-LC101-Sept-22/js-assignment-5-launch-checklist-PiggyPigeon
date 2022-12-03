@@ -22,14 +22,17 @@ function validateInput(testInput) {
    let numberInput = Number(testInput);
    if (testInput === "")
    {
+    list.style.visibility = "hidden"
        return "Empty";
    }
    else if (isNaN(numberInput))
    {
+    list.style.visibility = "hidden"
        return "Not a Number";
    }
    else if (isNaN(numberInput) === false)
    {
+    list.style.visibility = "hidden"
        return "Is a Number";
    }
 }
@@ -71,7 +74,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
            cargo.innerHTML = "Cargo mass low enough for launch"
            launchStatus.innerHTML = "Shuttle is Ready for Launch";
            launchStatus.style.color = "rgb(65, 159, 106)";
-           list.style.visibility = "hidden";
+           list.style.visibility = "visible";
        }
    }
 }
