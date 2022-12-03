@@ -2,7 +2,7 @@
 
 
 //the below line may be for test specs but with this line the site wont work....
-// const { addDestinationInfo } = require("./scriptHelper");
+const { addDestinationInfo } = require("./scriptHelper");
 
 window.addEventListener("load", function() {
 
